@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="com.example.android.rescuerobot.MainActivity">
+
+
+    <Button
+        android:id="@+id/send_forward_tx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forward"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp" />
+    <Button
+        android:layout_below="@id/send_forward_tx"
+        android:id="@+id/send_backward_tx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Backward"/>
+    <Button
+        android:layout_below="@id/send_backward_tx"
+        android:id="@+id/send_right_tx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Right"/>
+    <Button
+        android:layout_below="@id/send_right_tx"
+        android:id="@+id/send_left_tx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Left"/>
+
+    <RelativeLayout
+        android:layout_below="@id/send_left_tx"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_shadow">
+
+        <ImageView
+            android:id="@+id/backIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="No Obstacle" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:text="Distance is:" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:text="Inclination: " />
+
+
+</RelativeLayout>
